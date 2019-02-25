@@ -8,6 +8,9 @@ var players = [];
 var playerSpeed = 3;
 
 console.log("server started on port " + port);
+http.listen(port, function(){
+	console.log('Listening on *:' + port);
+});
 
 io.on('connection', function (socket) {
     
